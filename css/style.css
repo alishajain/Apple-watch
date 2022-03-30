@@ -15,8 +15,8 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-size: 1.8rem;
+  overflow: hidden;
   flex-wrap: wrap;
-  overflow: visible;
 }
 
 /*Logo*/
@@ -35,7 +35,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-left: 0 10px;
   width: 95%;
   align-items: center;
 }
@@ -78,6 +77,10 @@ body {
 
 .icon_shopping {
   height: 22px;
+}
+
+a {
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .nav__icon {
@@ -127,14 +130,14 @@ body {
     background: none;
     font-size: 1.4rem;
     font-weight: 400;
-
+    width: 15vw;
     padding-left: 5px;
     outline: 0;
   }
 
   .search_extend {
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   .search_box {
@@ -261,6 +264,10 @@ body {
   width: 280px;
   height: 250px;
 }
+
+.watch_desktop {
+  display: none;
+}
 /*
 .color_img {
   width: 20px;
@@ -306,9 +313,15 @@ body {
   }
 
   .watch_grey {
+    display: none;
+  }
+
+  .watch_desktop {
     width: 489px;
     height: 489px;
+    display: flex;
   }
+
   .watch_area {
     display: flex;
     align-items: center;
@@ -317,8 +330,8 @@ body {
 
   .display_watches {
     display: flex;
-    padding: 50px 10px 0 15px;
     width: 415px;
+    position: relative;
     justify-content: space-between;
   }
 
@@ -332,6 +345,7 @@ body {
     width: 131px;
     height: 70px;
     border-radius: 10px;
+    position: relative;
   }
 
   .black {
@@ -343,7 +357,7 @@ body {
   }
 
   .peach {
-    background: rgba(249, 205, 196, 0.6);
+    background: rgba(155, 120, 113, 0.6);
   }
 }
 
@@ -359,6 +373,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
 }
+
 .icon_fb {
   width: 14px;
   height: 28px;
@@ -393,7 +408,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 20px;
-  width: 100vw;
+  width: 80vw;
   height: 3vh;
 }
 
@@ -407,7 +422,7 @@ body {
   .footer {
     flex-direction: column;
     width: 2vw;
-    height: 90vh;
+    height: 80vh;
   }
 
   .menu {
