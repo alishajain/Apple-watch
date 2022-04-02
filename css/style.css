@@ -17,17 +17,13 @@ body {
   font-size: 1.8rem;
   overflow: hidden;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 /*Logo*/
 .logo {
   width: 40px;
   height: 50px;
-}
-
-.apple {
-  padding: 33px 0 0 0;
-  width: 100px;
 }
 
 /*Navigation Bar*/
@@ -37,6 +33,7 @@ body {
   flex-wrap: nowrap;
   width: 95%;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .nav__list {
@@ -44,7 +41,6 @@ body {
 }
 
 .nav__list {
-  width: 130px;
   margin-bottom: 15px;
   justify-self: center;
   align-items: center;
@@ -97,16 +93,11 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--color-font);
-    padding-top: 20px;
-    padding-left: 0;
-    margin-bottom: 15px;
   }
 
   .nav__item {
     list-style-type: none;
-    width: 100%;
     color: #fff;
-    padding: 0 30px;
     justify-items: center;
   }
 
@@ -138,23 +129,20 @@ a {
   .search_extend {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .search_box {
     background: rgba(255, 255, 255, 0.27);
     display: flex;
     align-items: flex-end;
-    width: 245px;
-    height: 42px;
-    padding: 0 0 5px 5px;
+    padding: 5px;
     color: #fff;
-    height: 24px;
     border-radius: 50px;
   }
 
   .search_img {
     height: 24px;
-    padding-left: 20px;
   }
 
   .line {
@@ -188,7 +176,6 @@ a {
   }
 
   .background {
-    width: 100vw;
     border-radius: 25px 0 0 25px;
   }
 }
@@ -234,8 +221,8 @@ a {
   font-size: 1.8rem;
   color: #fffafa;
   background: var(--color-primary);
-  width: 151px;
-  height: 58px;
+  width: 15rem;
+  height: 6rem;
   border: 3px solid #fffafa;
   border-radius: 50px;
 }
@@ -247,8 +234,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .btn {
-    width: 250px;
-    height: 70px;
+    width: 25rem;
+    height: 7rem;
     border-radius: 100px;
     font-size: 2rem;
   }
@@ -324,30 +311,35 @@ a {
 
   .watch_area {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-right: 50px;
   }
 
   .display_watches {
     display: flex;
-    width: 415px;
+    width: 41rem;
     position: relative;
     justify-content: space-between;
   }
 
   .clr_ind {
-    height: 120px;
-    padding: 0 0 0 0;
+    height: 12rem;
+    padding: 0;
   }
 
   .watch-box {
     margin-top: 10px;
-    width: 131px;
-    height: 70px;
+    width: 13rem;
+    height: 7rem;
     border-radius: 10px;
     position: relative;
   }
 
+  .watch-box > img {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+  }
   .black {
     background: rgba(67, 69, 88, 0.6);
   }
@@ -407,7 +399,7 @@ a {
   background: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 2rem 2rem;
   width: 80vw;
   height: 3vh;
 }
